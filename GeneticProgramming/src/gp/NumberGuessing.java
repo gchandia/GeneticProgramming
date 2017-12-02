@@ -98,6 +98,7 @@ public class NumberGuessing {
       int result = population[i].operate();
       if (result == solution) {
         sequenceFound = true;
+        System.out.println("hi");
       }
       population[i].setFitness(Math.abs(result - solution));
     }
