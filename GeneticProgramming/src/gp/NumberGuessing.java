@@ -98,7 +98,7 @@ public class NumberGuessing {
       int result = population[i].operate();
       if (result == solution) {
         sequenceFound = true;
-        System.out.println("hi");
+        System.out.println("Content of tree (in reverse order notation): " + population[i].printContent());
       }
       population[i].setFitness(Math.abs(result - solution));
     }
