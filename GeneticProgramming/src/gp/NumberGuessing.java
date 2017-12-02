@@ -96,7 +96,9 @@ public class NumberGuessing {
     
     for (int i = 0; i < population.length; i++) {
       int result = population[i].operate();
-      if (result == solution) sequenceFound = true;
+      if (result == solution) {
+        sequenceFound = true;
+      }
       population[i].setFitness(Math.abs(result - solution));
     }
     
