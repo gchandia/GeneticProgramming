@@ -221,7 +221,7 @@ public class FunctionGuessing {
     //p(-1) = 1
     //p(0) = 1
     //p(1) = 3
-    int[] example = {1, 1, 3};
+    int[] example = {1, 1, 3}; 
     
     long startTime = System.currentTimeMillis();
     gp.geneticAlgorithm(4, example, null);
